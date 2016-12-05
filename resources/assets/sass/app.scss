@@ -1,0 +1,150 @@
+$bgcolor: rgb(69,69,69);
+$navcolor: rgb(50,50,50);
+$hamcolor: rgb(37,37,37);
+
+$icon-width: 60px;
+$icon-height: 50px;
+$icons: url('/images/sprite.png');
+
+body {
+	background: $bgcolor;
+	height: 100vh;
+}
+
+nav {
+	width: 60px;
+	height: 100vh;
+	background: $navcolor;
+
+	.enveloppe, .divider-top, .other {
+		display: none;
+	}
+
+	.divider-top {
+		position: relative;
+		z-index: 10;
+		border-top: 2px solid $bgcolor;
+		width: 48px;
+		margin {
+			top: 24px;
+			bottom: 24px;
+		}
+	}
+
+	.divider-bottom {
+		@extend .divider-top;
+		display: block;
+	}
+
+	.favicon {
+		z-index: 10;
+		position: absolute;
+		bottom: 20px;
+		width: $icon-width;
+	}
+
+	.favicon img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	ul {
+		position: relative;
+		width: 100%;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		z-index: 10;
+
+		li {
+			width: 100%;
+			margin: 0;
+		}
+
+		.hamburger {
+			background-color: $hamcolor;
+			background-image: $icons;
+			background-position-x: 0;
+			background-position-y: -($icon-height*0);
+			height: $icon-height;
+			width: $icon-width;
+		}
+
+		.question {
+			@extend .hamburger;
+			background-position-y: -($icon-height*1);
+			background-color: $navcolor;
+			margin-top: 20px;
+		}
+
+		.magnifier {
+			@extend .hamburger;
+			background-position-y: -($icon-height*2);
+			background-color: $navcolor;
+		}
+
+		.enveloppe {
+			@extend .hamburger;
+			background-position-y: -($icon-height*3);
+			background-color: $navcolor;
+		}
+
+		.dog {
+			@extend .hamburger;
+			background-position-y: -($icon-height*4);
+			background-color: $navcolor;
+		}
+
+		.cat {
+			@extend .hamburger;
+			background-position-y: -($icon-height*5);
+			background-color: $navcolor;
+			
+		}
+		.fish {
+			@extend .hamburger;
+			background-position-y: -($icon-height*6);
+			background-color: $navcolor;
+		}
+		.owl {
+			@extend .hamburger;
+			background-position-y: -($icon-height*7);
+			background-color: $navcolor;
+		}
+		.bunny {
+			@extend .hamburger;
+			background-position-y: -($icon-height*8);
+			background-color: $navcolor;
+		}
+
+		.other {
+			@extend .hamburger;
+			background-position-y: -($icon-height*9);
+			background-color: $navcolor;
+		}
+
+		.question, .magnifier, .dog, .cat, .fish, .owl, .bunny {
+			&:hover {
+				background-position-x: -($icon-width);
+			}
+		}
+	}
+
+	.expand {
+		position: absolute;
+		top: 0;
+		left: -97px;
+		width: 157px;
+		height: 100vh;
+		background: $navcolor;
+		z-index: 5;
+	}
+}
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
