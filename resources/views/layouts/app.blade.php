@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link href="/css/app.css" rel="stylesheet">
     
 </head>
@@ -20,45 +22,36 @@
         <nav>
             <ul>
             	<li class="hamburger">
-            		<div></div>
+            		
             	</li>
             	<li class="question">
-            		<div></div>
-            		<span class="text_category">Search</span>
+            		<a href="#">Search</a>
             	</li>
             	<li class="magnifier">
-            		<div></div>
-            		<span class="text_category">FAQ</span>
+            		<a href="#">FAQ</a>
             	</li>
             	<hr class="divider-top">
             	<li class="enveloppe">
-            		<div></div>
-            		<span class="text_category">Contact</span>
+            		<a href="#">Contact</a>
             	</li>
             	<hr class="divider-bottom">
             	<li class="dog">
-            		<div></div>
-            		<span class="text_category">Dogs</span>
+            		<a href="#">Dogs</a>
             	</li>
             	<li class="cat">
-            		<div></div>
-            		<span class="text_category">Cats</span>
+            		<a href="#">Cats</a>
             	</li>
             	<li class="fish">
-            		<div></div>
-            		<span class="text_category">Fish</span>
+            		<a href="#">Fish</a>
             	</li>
             	<li class="owl">
-            		<div></div>
-            		<span class="text_category">Birds</span>
+            		<a href="#">Birds</a>
             	</li>
             	<li class="bunny">
-            		<div></div>
-            		<span class="text_category">Small animals</span>
+            		<a href="#">Small animals</a>
             	</li>
             	<li class="other">
-            		<div></div>
-            		<span class="text_category">Other</span>
+            		<a href="#">Other</a>
             	</li>
 
             <div class="favicon">
@@ -73,9 +66,8 @@
     <script
 		src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'>
 	</script>
-	<script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-          
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script src="/js/bootstrap.min.js"></script>          
     <script src="/js/app.js"></script>
 </body>
 </html>

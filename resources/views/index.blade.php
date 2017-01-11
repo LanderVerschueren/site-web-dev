@@ -4,28 +4,57 @@
 <content>
 	<div class="inner_container">
 		<header>
-			<div class="carousel carousel-slider center" data-indicators="true">
-				<div class="carousel-fixed-item center">
-					<img src="../images/kownloon_logo.png" alt="">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<img src="/images/visual_a.png">
 				</div>
-				<div class="carousel-item red white-text" href="#one!">
-					<h2>First Panel</h2>
-					<p class="white-text">This is your first panel</p>
+
+				<div class="mySlides fade">
+					<img src="/images/visual_b.png">
 				</div>
-				<div class="carousel-item amber white-text" href="#two!">
-					<h2>Second Panel</h2>
-					<p class="white-text">This is your second panel</p>
-				</div>
-				<div class="carousel-item green white-text" href="#three!">
-					<h2>Third Panel</h2>
-					<p class="white-text">This is your third panel</p>
-				</div>
-				<div class="carousel-item blue white-text" href="#four!">
-					<h2>Fourth Panel</h2>
-					<p class="white-text">This is your fourth panel</p>
-				</div>
+
+			</div>
+
+			<div class="dot-container">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
 			</div>
 		</header>
+
+		<section>
+			<div class="introtext">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="categories">
+				<div class="dog">
+					<img src="/images/sprite.png" alt="">
+					<h3>DOGS</h3>
+				</div>
+				<div>
+					<img src="/images/sprite.png" alt="">
+					<h3>CATS</h3>
+				</div>
+				<div>
+					<img src="/images/sprite.png" alt="">
+					<h3>FISH</h3>
+				</div>
+				<div>
+					<img src="/images/sprite.png" alt="">
+					<h3>BIRDS</h3>
+				</div>
+				<div>
+					<img src="/images/sprite.png" alt="">
+					<h3>SMALL ANIMALS</h3>
+				</div>
+				<div>
+					<img src="/images/sprite.png" alt="">
+					<h3>OTHER</h3>
+				</div>
+			</div>
+		</section>
 	</div>
 </content>
 @endsection

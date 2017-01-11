@@ -2,13 +2,20 @@ const elixir = require('laravel-elixir');
 
 require('laravel-elixir-vue-2');
 var gulp = require('gulp'),
-    php = require('gulp-connect-php');
+    php = require('gulp-connect-php'),
+    imagemin = require('gulp-imagemin');
 
 gulp.task('serve', function() {
     php.server({
         base: './public'
     });
 });
+
+gulp.task('imagemin', () =>
+    gulp.src('assets/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('public/images'))
+);
 
 /*
  |--------------------------------------------------------------------------
@@ -25,5 +32,6 @@ elixir(mix => {
     mix.sass('app.scss')
        .webpack('app.js')
        .task('serve')
+       .task('imagemin')
        .browserSync({proxy: 'localhost:8000'});
 });
