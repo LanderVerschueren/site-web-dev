@@ -24,33 +24,33 @@
             	<li class="hamburger">
             		
             	</li>
-            	<li class="question">
+            	<li class="question" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">Search</a>
             	</li>
-            	<li class="magnifier">
+            	<li class="magnifier" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">FAQ</a>
             	</li>
             	<hr class="divider-top">
-            	<li class="enveloppe">
-            		<a href="#">Contact</a>
+            	<li class="enveloppe" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
+            		<a href="/about">Contact</a>
             	</li>
             	<hr class="divider-bottom">
-            	<li class="dog">
+            	<li class="dog" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">Dogs</a>
             	</li>
-            	<li class="cat">
+            	<li class="cat" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">Cats</a>
             	</li>
-            	<li class="fish">
+            	<li class="fish" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">Fish</a>
             	</li>
-            	<li class="owl">
+            	<li class="owl" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">Birds</a>
             	</li>
-            	<li class="bunny">
+            	<li class="bunny" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">Small animals</a>
             	</li>
-            	<li class="other">
+            	<li class="other" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
             		<a href="#">Other</a>
             	</li>
 

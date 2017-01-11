@@ -14,6 +14,10 @@
 					<img src="/images/visual_b.png">
 				</div>
 
+				<div class="mySlides fade">
+					<img src="/images/visual_c.png">
+				</div>
+
 			</div>
 
 			<div class="dot-container">
@@ -29,30 +33,122 @@
 			</div>
 
 			<div class="categories">
-				<div class="dog">
-					<img src="/images/sprite.png" alt="">
-					<h3>DOGS</h3>
+				<div class="categories-container">
+					<a href="">
+						<div class="image-container">
+							<img src="/images/category/dog.png" alt="">
+						</div>
+						<h3>DOGS</h3>
+					</a>
 				</div>
-				<div>
-					<img src="/images/sprite.png" alt="">
+				<div class="categories-container">
+					<a href="#"><div class="image-container">
+						<img src="/images/category/cat.png" alt="">
+					</div>
 					<h3>CATS</h3>
+					</a>
 				</div>
-				<div>
-					<img src="/images/sprite.png" alt="">
+				<div class="categories-container">
+					<a href="#"><div class="image-container">
+						<img src="/images/category/fish.png" alt="">
+					</div>
 					<h3>FISH</h3>
+					</a>
 				</div>
-				<div>
-					<img src="/images/sprite.png" alt="">
+				<div class="categories-container">
+					<a href="#"><div class="image-container">
+						<img src="/images/category/bird.png" alt="">
+					</div>
 					<h3>BIRDS</h3>
+					</a>
 				</div>
-				<div>
-					<img src="/images/sprite.png" alt="">
+				<div class="categories-container">
+					<a href="#"><div class="image-container">
+						<img src="/images/category/hamster.png" alt="">
+					</div>
 					<h3>SMALL ANIMALS</h3>
+					</a>
 				</div>
-				<div>
-					<img src="/images/sprite.png" alt="">
+				<div class="categories-container">
+					<a href="#"><div class="image-container">
+						<img src="/images/category/+.png" alt="">
+					</div>
 					<h3>OTHER</h3>
+					</a>
 				</div>
+			</div>
+
+			<div class="hot-items">
+				<h3>HOT ITEMS.</h3>
+				<div class="product-container">
+					<div class="product">
+						<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
+						<div class="product-text">
+							<p>Cooling Mat</p>
+							<p>€ 15,49</p>
+						</div>
+
+						<div class="dot-container">
+							<div class="dot white"></div>
+							<div class="dot black"></div>
+							<div class="dot blue"></div>
+						</div>
+					</div>
+					<div class="product">
+						<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
+						<div class="product-text">
+							<p>Cooling Mat</p>
+							<p>€ 15,49</p>
+						</div>
+
+						<div class="dot-container">
+							<div class="dot white"></div>
+							<div class="dot black"></div>
+							<div class="dot blue"></div>
+						</div>
+					</div>
+					<div class="product">
+						<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
+						<div class="product-text">
+							<p>Cooling Mat</p>
+							<p>€ 15,49</p>
+						</div>
+
+						<div class="dot-container">
+							<div class="dot white"></div>
+							<div class="dot black"></div>
+							<div class="dot blue"></div>
+						</div>
+					</div>
+
+					<div class="product-stack">
+						<div class="front">
+							<img src="/images/voorkant_koeling_mat_2.png" alt="Productfoto van een koeling mat voor honden.">
+							<div class="product-text stack">
+								<p>Cooling Mat</p>
+								<p>€ 15,49</p>
+							</div>
+						</div>
+						<div class="middle"></div>
+						<div class="back"></div>
+					</div>
+				</div>
+				<a href="#" class="visit-store-link">Visit the store</a>
+			</div>
+
+			<div class="newsletter">
+				<div class="background-left">
+					<h5>discover amazing<br>Kowloon deals!</h5>
+					<p>only in our newsletter</p>
+				</div>
+				<form action="#" method="POST">
+					<p class="newsletter-subscribe">Subscribe to our newsletter</p>
+					<p class="newsletter-lorum">Lorum ipsum dolor sit amet..</p>
+					<div class="form-group">
+						<input type="text" placeholder="Domain @ name.com">
+						<button type="submit">OK</button>
+					</div>
+				</form>
 			</div>
 		</section>
 	</div>

@@ -14,6 +14,94 @@ html, body {
   overflow-x: hidden;
 }
 
+h3 {
+  font-size: 40px;
+  font-family: "Choplin";
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Choplin";
+  color: white;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+label {
+  font-size: 20px;
+  font-family: "Arial";
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  max-height: 22px;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+.breadcrumbs-container img {
+  margin-left: 8px;
+}
+
+.breadcrumbs-container .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 10px solid #252525;
+}
+
+.breadcrumbs-container .breadcrumbs {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #252525;
+  border-radius: 3px;
+  padding-left: 4px;
+  margin-right: 4px;
+}
+
+.breadcrumbs-container .breadcrumbs .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff6f9e;
+}
+
+.breadcrumbs-container .breadcrumbs p {
+  font-size: 14px;
+  font-family: "Arial";
+  color: #a2a2a2;
+  line-height: 1.571;
+  padding: 6px;
+}
+
+.breadcrumbs-container .breadcrumbs.first {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+p, li {
+  font-size: 14px;
+  font-family: "Arial";
+  color: white;
+  line-height: 1.5;
+}
+
 .container {
   display: -webkit-box;
   display: flex;
@@ -27,7 +115,6 @@ nav {
   display: flex;
   -webkit-box-flex: 1;
   flex: 1 0 60px;
-  height: 100%;
   background: #323232;
   -webkit-transition: -webkit-box-flex 0.5s;
   transition: -webkit-box-flex 0.5s;
@@ -129,13 +216,11 @@ nav ul .question:hover, nav ul .magnifier:hover, nav ul .enveloppe:hover {
 nav ul .magnifier {
   margin-top: 0;
   background-position-y: -100px;
-  background-color: #323232;
 }
 
 nav ul .enveloppe {
   margin-top: 0;
   background-position-y: -150px;
-  background-color: #323232;
 }
 
 nav ul .dog, nav ul .cat, nav ul .fish, nav ul .owl, nav ul .bunny, nav ul .other {
@@ -153,27 +238,22 @@ nav ul .dog a, nav ul .cat a, nav ul .fish a, nav ul .owl a, nav ul .bunny a, na
 
 nav ul .cat {
   background-position-y: -250px;
-  background-color: #323232;
 }
 
 nav ul .fish {
   background-position-y: -300px;
-  background-color: #323232;
 }
 
 nav ul .owl {
   background-position-y: -350px;
-  background-color: #323232;
 }
 
 nav ul .bunny {
   background-position-y: -400px;
-  background-color: #323232;
 }
 
 nav ul .other {
   background-position-y: -450px;
-  background-color: #323232;
 }
 
 nav ul .question:hover, nav ul .magnifier:hover, nav ul .enveloppe:hover, nav ul .magnifier:hover, nav ul .enveloppe:hover, nav ul .dog:hover, nav ul .cat:hover, nav ul .fish:hover, nav ul .owl:hover, nav ul .bunny:hover, nav ul .other:hover, nav ul .cat:hover, nav ul .fish:hover, nav ul .owl:hover, nav ul .bunny:hover {
@@ -232,10 +312,7 @@ content .inner_container {
 
 content .inner_container header {
   height: 480px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
+  position: relative;
 }
 
 content .inner_container header .slideshow-container {
@@ -245,11 +322,13 @@ content .inner_container header .slideshow-container {
 
 content .inner_container header .mySlides img {
   width: 100%;
+  height: 480px;
 }
 
 content .inner_container header .dot-container {
   position: absolute;
   bottom: 20px;
+  left: 580px;
 }
 
 content .inner_container header .dot {
@@ -311,91 +390,379 @@ content .inner_container section .categories {
   margin-top: 35px;
 }
 
-content .inner_container section .categories div {
+content .inner_container section .categories .categories-container {
+  display: -webkit-box;
+  display: flex;
   -webkit-box-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
-content .inner_container section .categories div:after {
-  height: 10px;
-  display: block;
-  width: 100px;
-  background: #808080;
-  border-right: 1px white;
-  content: '';
+content .inner_container section .categories .categories-container .image-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 85px;
 }
 
-content .inner_container section .categories div img {
-  -o-object-fit: none;
-  object-fit: none;
-  -o-object-position: 0 0;
-  object-position: 0 0;
-  width: 60px;
-  height: 50px;
-}
-
-content .inner_container section .categories div h3 {
+content .inner_container section .categories .categories-container h3 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
   font-size: 20px;
   font-family: "Choplin-light";
   color: white;
   text-align: center;
+  height: 35px;
 }
 
-content .inner_container section .breadcrumbs-container {
+content .inner_container section .hot-items {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: row;
-  max-height: 22px;
-  margin-top: 34px;
-  margin-bottom: 34px;
+  flex-direction: column;
 }
 
-content .inner_container section .breadcrumbs-container img {
-  margin-left: 8px;
-}
-
-content .inner_container section .breadcrumbs-container .arrow-left {
-  width: 0;
-  height: 0;
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  border-right: 10px solid #252525;
-}
-
-content .inner_container section .breadcrumbs-container .breadcrumbs {
+content .inner_container section .hot-items .product-container {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+content .inner_container section .hot-items .product-container .product, content .inner_container section .hot-items .product-container .product-stack {
+  width: 227px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: row;
+  flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  background-color: #252525;
-  border-radius: 3px;
-  padding-left: 4px;
-  margin-right: 4px;
+  background-color: #565656;
+  padding: 3px;
+  position: relative;
 }
 
-content .inner_container section .breadcrumbs-container .breadcrumbs .circle {
-  width: 10px;
-  height: 10px;
+content .inner_container section .hot-items .product-container .product img, content .inner_container section .hot-items .product-container .product-stack img {
+  width: 100%;
+}
+
+content .inner_container section .hot-items .product-container .product .product-text, content .inner_container section .hot-items .product-container .product-stack .product-text {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+content .inner_container section .hot-items .product-container .product .product-text p, content .inner_container section .hot-items .product-container .product-stack .product-text p {
+  margin: 0;
+  margin-top: 7px;
+  font-size: 16px;
+  font-family: "Arial";
+  color: white;
+  font-weight: bold;
+}
+
+content .inner_container section .hot-items .product-container .product .dot-container, content .inner_container section .hot-items .product-container .product-stack .dot-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: -webkit-box;
+  display: flex;
+}
+
+content .inner_container section .hot-items .product-container .product .dot-container .dot, content .inner_container section .hot-items .product-container .product-stack .dot-container .dot {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
   border-radius: 50%;
-  background-color: #ff6f9e;
+  border: 1px solid white;
 }
 
-content .inner_container section .breadcrumbs-container .breadcrumbs p {
+content .inner_container section .hot-items .product-container .product .dot-container .white, content .inner_container section .hot-items .product-container .product-stack .dot-container .white {
+  background-color: white;
+}
+
+content .inner_container section .hot-items .product-container .product .dot-container .black, content .inner_container section .hot-items .product-container .product-stack .dot-container .black {
+  background-color: black;
+}
+
+content .inner_container section .hot-items .product-container .product .dot-container .blue, content .inner_container section .hot-items .product-container .product-stack .dot-container .blue {
+  background-color: #2d4aac;
+}
+
+content .inner_container section .hot-items .product-container .product-stack {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+content .inner_container section .hot-items .product-container .product-stack .front {
+  z-index: 3;
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  background-color: #565656;
+}
+
+content .inner_container section .hot-items .product-container .product-stack .front .stack {
+  padding-right: 5px;
+}
+
+content .inner_container section .hot-items .product-container .product-stack .middle {
+  z-index: 2;
+}
+
+content .inner_container section .hot-items .product-container .product-stack .back {
+  z-index: 3;
+}
+
+content .inner_container section .hot-items .visit-store-link {
+  font-size: 15px;
+  font-family: "Choplin";
+  color: white;
+  text-decoration: underline;
+  text-align: right;
+  margin-top: 20px;
+}
+
+content .inner_container section .newsletter {
+  display: -webkit-box;
+  display: flex;
+  height: 185px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+content .inner_container section .newsletter .background-left {
+  background-image: url("/images/Patroon_A.jpg");
+  -webkit-box-flex: 1;
+  flex: 1 0 613px;
+  padding-top: 40px;
+}
+
+content .inner_container section .newsletter .background-left h5 {
+  font-size: 44px;
+  font-family: "Choplin";
+  color: white;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+content .inner_container section .newsletter .background-left p {
+  font-size: 20px;
+  font-family: "Choplin";
+  color: white;
+  text-align: center;
+}
+
+content .inner_container section .newsletter form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  flex: 1 0 347px;
+  background-color: #565656;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+content .inner_container section .newsletter form .newsletter-subscribe {
+  font-size: 20px;
+  font-family: "Arial";
+  color: white;
+  margin: 0;
+}
+
+content .inner_container section .newsletter form .newsletter-lorum {
   font-size: 14px;
   font-family: "Arial";
-  color: #a2a2a2;
-  line-height: 1.571;
-  padding: 6px;
+  color: #cecece;
+  margin: 0;
 }
 
-content .inner_container section .breadcrumbs-container .breadcrumbs.first {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+content .inner_container section .newsletter form .form-group input, content .inner_container section .newsletter .about .kowloon-contact form .form-group textarea, content .inner_container section .about .kowloon-contact .newsletter form .form-group textarea {
+  width: 230px;
+  height: 40px;
+  border: 2px solid #9a9a9a;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: "Arial";
+  color: #2b2b2b;
+  line-height: 1.375;
+}
+
+content .inner_container section .newsletter form .form-group button {
+  width: 45px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background-color: #454545;
+  font-size: 16px;
+  font-family: "Arial";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.375;
+  text-align: center;
+}
+
+content .inner_container section .about .kowloon-info {
+  display: -webkit-box;
+  display: flex;
+}
+
+content .inner_container section .about .kowloon-info .history-container {
+  width: 820px;
+}
+
+content .inner_container section .about .kowloon-info .history-container h4 {
+  margin-bottom: 0;
+}
+
+content .inner_container section .about .kowloon-info .history-container p {
+  margin-top: 0;
+  padding-right: 150px;
+}
+
+content .inner_container section .about .kowloon-info .contact-container h4 {
+  margin-bottom: 0;
+}
+
+content .inner_container section .about .kowloon-info .contact-container ul {
+  margin: 0;
+  padding-left: 15px;
+  color: white;
+}
+
+content .inner_container section .about .kowloon-contact {
+  margin-top: 85px;
+}
+
+content .inner_container section .about .kowloon-contact h4 {
+  margin-top: 0;
+}
+
+content .inner_container section .about .kowloon-contact form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+content .inner_container section .about .kowloon-contact form .form-group {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+content .inner_container section .about .kowloon-contact form .form-group input, content .inner_container section .about .kowloon-contact form .form-group textarea {
+  margin-bottom: 30px;
+  width: 220px;
+  height: 40px;
+  border: 2px solid #9a9a9a;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: "Arial";
+  color: #2b2b2b;
+  line-height: 1.375;
+}
+
+content .inner_container section .about .kowloon-contact form .form-group textarea {
+  width: 820px;
+  height: 147px;
+}
+
+content .inner_container section .about .kowloon-contact form button {
+  width: 237px;
+  height: 42px;
+  border: none;
+  background-color: #ff6f9e;
+  font-size: 14px;
+  font-family: "Arial";
+  color: white;
+  font-weight: bold;
+  line-height: 1.571;
+}
+
+content .inner_container section .about .kowloon-faq {
+  margin-top: 85px;
+}
+
+content .inner_container section .about .kowloon-faq .closed {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  margin-bottom: 10px;
+  background-color: #565656;
+}
+
+content .inner_container section .about .kowloon-faq .closed a {
+  font-size: 20px;
+  font-family: "Arial";
+  color: white;
+  font-weight: bold;
+  line-height: 0.95;
+  padding: 15px;
+  text-decoration: none;
+}
+
+content .inner_container section .about .kowloon-faq .open {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 102px;
+  margin-bottom: 10px;
+  background-color: #565656;
+}
+
+content .inner_container section .about .kowloon-faq .open a {
+  font-size: 20px;
+  font-family: "Arial";
+  color: white;
+  font-weight: bold;
+  line-height: 0.95;
+  padding: 15px;
+  text-decoration: none;
+}
+
+content .inner_container section .about .kowloon-faq .open p {
+  margin: 0;
+  padding-left: 45px;
 }
 
 /*# sourceMappingURL=app.css.map */
