@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css">
     <link href="/css/app.css" rel="stylesheet">
     
 </head>
@@ -22,52 +24,76 @@
         <nav>
             <ul>
             	<li class="hamburger">
-            		
+            		<a href="#">
+                        <img src="/images/sprite.png" alt="">   
+                    </a>
             	</li>
             	<li class="question" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">Search</a>
+                    <a href="#">
+                        <img src="/images/sprite.png" alt=""> Search
+                    </a>
             	</li>
             	<li class="magnifier" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">FAQ</a>
+                    <a href="">
+                        <img src="/images/sprite.png" alt=""> FAQ
+                    </a>
             	</li>
-            	<hr class="divider-top">
             	<li class="enveloppe" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="/about">Contact</a>
+                    <a href="/about">
+                        <img src="/images/sprite.png" alt=""> Contact
+                    </a>
             	</li>
             	<hr class="divider-bottom">
             	<li class="dog" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">Dogs</a>
+                    <a href="/productview">
+                        <img src="/images/sprite.png" alt=""> Dogs
+                    </a>
             	</li>
             	<li class="cat" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">Cats</a>
+                    <a href="/productview">
+                        <img src="/images/sprite.png" alt=""> Cats
+                    </a>
             	</li>
             	<li class="fish" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">Fish</a>
+                    <a href="/productview">
+                        <img src="/images/sprite.png" alt=""> Fish
+                    </a>
             	</li>
             	<li class="owl" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">Birds</a>
+                    <a href="/productview">
+                        <img src="/images/sprite.png" alt=""> Birds
+                    </a>
             	</li>
             	<li class="bunny" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">Small animals</a>
+                    <a href="/productview">
+                        <img src="/images/sprite.png" alt=""> Small animals
+                    </a>
             	</li>
             	<li class="other" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
-            		<a href="#">Other</a>
+                    <a href="/productview">
+                        <img src="/images/sprite.png" alt=""> Other
+                    </a>
             	</li>
 
-            <div class="favicon">
-            	<img src="/images/favicon.png" alt="Logo of Kowloon">
-            </div>
+            <div class="favicon"><a href="/" class="favicon-text">K</a></div>
         </nav>
 
         @yield('content')
+
+        @include('pages.filter')
     </div>
 
     <!-- Scripts -->
     <script
 		src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'>
 	</script>
-	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-	<script src="/js/bootstrap.min.js"></script>          
+	<script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+	<script src="/js/bootstrap.min.js"></script>     
+    <script src="/js/jscroll.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script> 
     <script src="/js/app.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@
 
 			<div class="categories">
 				<div class="categories-container">
-					<a href="">
+					<a href="/productview">
 						<div class="image-container">
 							<img src="/images/category/dog.png" alt="">
 						</div>
@@ -42,35 +42,35 @@
 					</a>
 				</div>
 				<div class="categories-container">
-					<a href="#"><div class="image-container">
+					<a href="/productview"><div class="image-container">
 						<img src="/images/category/cat.png" alt="">
 					</div>
 					<h3>CATS</h3>
 					</a>
 				</div>
 				<div class="categories-container">
-					<a href="#"><div class="image-container">
+					<a href="/productview"><div class="image-container">
 						<img src="/images/category/fish.png" alt="">
 					</div>
 					<h3>FISH</h3>
 					</a>
 				</div>
 				<div class="categories-container">
-					<a href="#"><div class="image-container">
+					<a href="/productview"><div class="image-container">
 						<img src="/images/category/bird.png" alt="">
 					</div>
 					<h3>BIRDS</h3>
 					</a>
 				</div>
 				<div class="categories-container">
-					<a href="#"><div class="image-container">
+					<a href="/productview"><div class="image-container">
 						<img src="/images/category/hamster.png" alt="">
 					</div>
 					<h3>SMALL ANIMALS</h3>
 					</a>
 				</div>
 				<div class="categories-container">
-					<a href="#"><div class="image-container">
+					<a href="/productview"><div class="image-container">
 						<img src="/images/category/+.png" alt="">
 					</div>
 					<h3>OTHER</h3>
@@ -82,55 +82,63 @@
 				<h3>HOT ITEMS.</h3>
 				<div class="product-container">
 					<div class="product">
-						<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
-						<div class="product-text">
-							<p>Cooling Mat</p>
-							<p>€ 15,49</p>
-						</div>
-
-						<div class="dot-container">
-							<div class="dot white"></div>
-							<div class="dot black"></div>
-							<div class="dot blue"></div>
-						</div>
-					</div>
-					<div class="product">
-						<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
-						<div class="product-text">
-							<p>Cooling Mat</p>
-							<p>€ 15,49</p>
-						</div>
-
-						<div class="dot-container">
-							<div class="dot white"></div>
-							<div class="dot black"></div>
-							<div class="dot blue"></div>
-						</div>
-					</div>
-					<div class="product">
-						<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
-						<div class="product-text">
-							<p>Cooling Mat</p>
-							<p>€ 15,49</p>
-						</div>
-
-						<div class="dot-container">
-							<div class="dot white"></div>
-							<div class="dot black"></div>
-							<div class="dot blue"></div>
-						</div>
-					</div>
-
-					<div class="product-stack">
-						<div class="front">
-							<img src="/images/voorkant_koeling_mat_2.png" alt="Productfoto van een koeling mat voor honden.">
-							<div class="product-text stack">
+						<a href="/productview-detail">
+							<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
+							<div class="product-text">
 								<p>Cooling Mat</p>
 								<p>€ 15,49</p>
 							</div>
-						</div>
-						<div class="middle"></div>
-						<div class="back"></div>
+
+							<div class="dot-container">
+								<div class="dot white"></div>
+								<div class="dot black"></div>
+								<div class="dot blue"></div>
+							</div>
+						</a>
+					</div>
+					<div class="product">
+						<a href="/productview-detail">
+							<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
+							<div class="product-text">
+								<p>Cooling Mat</p>
+								<p>€ 15,49</p>
+							</div>
+
+							<div class="dot-container">
+								<div class="dot white"></div>
+								<div class="dot black"></div>
+								<div class="dot blue"></div>
+							</div>
+						</a>
+					</div>
+					<div class="product">
+						<a href="/productview-detail">
+							<img src="/images/voorkant_koeling_mat.png" alt="Productfoto van een koeling mat voor honden.">
+							<div class="product-text">
+								<p>Cooling Mat</p>
+								<p>€ 15,49</p>
+							</div>
+
+							<div class="dot-container">
+								<div class="dot white"></div>
+								<div class="dot black"></div>
+								<div class="dot blue"></div>
+							</div>
+						</a>
+					</div>
+
+					<div class="product-stack">
+						<a href="/productview-detail">
+							<div class="front">
+								<img src="/images/voorkant_koeling_mat_2.png" alt="Productfoto van een koeling mat voor honden.">
+								<div class="product-text stack">
+									<p>Cooling Mat</p>
+									<p>€ 15,49</p>
+								</div>
+							</div>
+							<div class="middle"></div>
+							<div class="back"></div>
+						</a>
 					</div>
 				</div>
 				<a href="#" class="visit-store-link">Visit the store</a>

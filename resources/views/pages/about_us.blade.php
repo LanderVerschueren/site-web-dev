@@ -77,12 +77,27 @@
 
 				<div class="kowloon-faq">
 					<h4>Frequently asked questions</h4>
-					<div class="closed"><a href="#">Dit is een vraag</a></div>
-					<div class="open">
-						<a href="">Dit is een opengeklapte vraag</a>
+					<div class="faq-article closed">
+						<div class="faq-article-top">
+							<a href="#">Dit is een vraag</a>
+							<div class="arrow arrow-right"></div>
+						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
 					</div>
-					<div class="closed"><a href="#">Dit is een vraag</a></div>
+					<div class="faq-article open">
+						<div class="faq-article-top">
+							<a href="#">Dit is een opengeklapte vraag</a>
+							<div class="arrow arrow-down"></div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+					</div>
+					<div class="faq-article closed">
+						<div class="faq-article-top">
+							<a href="#">Dit is een vraag</a>
+							<div class="arrow arrow-right"></div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+					</div>
 				</div>
 			</div>
 		</section>

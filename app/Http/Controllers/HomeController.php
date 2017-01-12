@@ -13,4 +13,12 @@ class HomeController extends Controller
     public function about() {
     	return view('pages.about_us');
     }
+
+    public function product(Request $request) {
+    	return view('pages.productview');
+    }
+
+    public function productDetail(Request $request) {
+    	return view('pages.productview-detail');
+    }
 }
