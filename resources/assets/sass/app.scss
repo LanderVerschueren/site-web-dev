@@ -27,15 +27,14 @@ $icon-height: 50px;
 $icons: url('/images/sprite.png');
 
 html {
-	height: auto;
+	height: 100%;
 }
 
 body {
 	background: $maincolor;
 	height: 100%;
-
-	overflow-x: hidden;
 }
+
 
 h3 {
 	font-size: 40px;
@@ -421,9 +420,6 @@ p, li {
 
 .container {
 	display: flex;
-
-	margin: 0 !important;
-	padding: 0 !important;
 }
 
 section {

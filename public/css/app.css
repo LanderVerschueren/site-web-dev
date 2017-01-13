@@ -9,13 +9,12 @@
 }
 
 html {
-  height: auto;
+  height: 100%;
 }
 
 body {
   background: #454545;
   height: 100%;
-  overflow-x: hidden;
 }
 
 h3 {
@@ -391,8 +390,6 @@ p, li {
 .container {
   display: -webkit-box;
   display: flex;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 section {

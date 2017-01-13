@@ -24,8 +24,7 @@ $('.hamburger').click(function(event) {
 $('.question').click(function(event) {
     event.preventDefault();
 
-    $('.inner-filter').toggle();
-    console.log('test');
+    $('.inner-filter').css({display: 'flex'});
 });
 
 $('.faq-article-top').click(function(event) {
