@@ -1024,6 +1024,10 @@ content {
 								height: 147px;
 
 								@extend input;
+
+								@media screen and (max-width: $break-small) {
+									width: calc(100%);
+								} 
 							}
 						}						
 

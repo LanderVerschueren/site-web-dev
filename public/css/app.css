@@ -1003,6 +1003,12 @@ content .inner_container section .about .kowloon-contact form .form-group textar
   height: 147px;
 }
 
+@media screen and (max-width: 530px) {
+  content .inner_container section .about .kowloon-contact form .form-group textarea {
+    width: calc(100%);
+  }
+}
+
 content .inner_container section .about .kowloon-contact form button {
   width: 237px;
   height: 42px;
