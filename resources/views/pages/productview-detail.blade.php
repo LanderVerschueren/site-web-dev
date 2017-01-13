@@ -31,15 +31,19 @@
 					</div>
 					<div class="general-info">
 						<div class="breadcrumbs-container">
-							<img src="/images/favicon.png" alt="">
-							<div class="arrow-left"></div>
-							<div class="breadcrumbs first">
-								<div class="circle"></div>
-								<p>Dogs</p>
-							</div>
-							<div class="breadcrumbs">
-								<p>Splash 'n Fun</p>
-							</div>
+							<a href="/productview">
+								<img src="/images/favicon.png" alt="">
+								<div class="arrow-left"></div>
+								<div class="breadcrumbs first">
+									<div class="circle"></div>
+									<p>Dogs</p>
+								</div>
+							</a>
+							<a href="/productview-detail">
+								<div class="breadcrumbs">
+									<p>Splash 'n Fun</p>
+								</div>
+							</a>
 						</div>
 						<h3>Cooling mat</h3>
 						<h4>&euro; 15,49</h4>

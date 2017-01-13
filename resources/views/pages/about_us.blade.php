@@ -29,11 +29,13 @@
 
 		<section>
 			<div class="breadcrumbs-container">
-				<img src="/images/favicon.png" alt="">
-				<div class="arrow-left"></div>
-				<div class="breadcrumbs first">
-					<p>About us</p>
-				</div>
+				<a href="/about">
+					<img src="/images/favicon.png" alt="">
+					<div class="arrow-left"></div>
+					<div class="breadcrumbs first">
+						<p>About us</p>
+					</div>
+				</a>
 			</div>
 
 			<div class="about">

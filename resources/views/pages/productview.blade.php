@@ -25,15 +25,14 @@
 
 		<section>
 			<div class="breadcrumbs-container">
-				<img src="/images/favicon.png" alt="">
-				<div class="arrow-left"></div>
-				<div class="breadcrumbs first">
-					<div class="circle"></div>
-					<p>Dogs</p>
-				</div>
-				<div class="breadcrumbs">
-					<p>Splash 'n Fun</p>
-				</div>
+				<a href="/productview">
+					<img src="/images/favicon.png" alt="">
+					<div class="arrow-left"></div>
+					<div class="breadcrumbs first">
+						<div class="circle"></div>
+						<p>Dogs</p>
+					</div>
+				</a>
 			</div>
 
 

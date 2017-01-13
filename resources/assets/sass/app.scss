@@ -26,8 +26,11 @@ $icon-width: 60px;
 $icon-height: 50px;
 $icons: url('/images/sprite.png');
 
+html {
+	height: auto;
+}
 
-html, body {
+body {
 	background: $maincolor;
 	height: 100%;
 
@@ -94,45 +97,50 @@ label {
 	max-height: 22px;
 
 	margin-top: 34px;
-	margin-bottom: 34px;		
+	margin-bottom: 34px;	
 
-	.arrow-left {
-		border-right: 10px solid $hamcolor;
-	}	
-
-	.breadcrumbs {
+	a {
 		display: flex;
-		flex-direction: row;
-		align-items: center;
+		text-decoration: none;
 
-		background-color: $hamcolor;
+		.arrow-left {
+			border-right: 10px solid $hamcolor;
+		}	
 
-		border-radius: 3px;
+		.breadcrumbs {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
 
-		padding-left: 4px;
-		margin-right: 4px;
+			background-color: $hamcolor;
 
-		.circle {
-			width: 10px;
-			height: 10px;
-			border-radius: 50%;
-			background-color: rgb(255, 111, 158);
+			border-radius: 3px;
+
+			padding-left: 4px;
+			margin-right: 4px;
+
+			.circle {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: rgb(255, 111, 158);
+			}
+
+			p {
+				font-size: 14px;
+				font-family: "Arial";
+				color: $textcolor1;
+				line-height: 1.571;
+
+				padding: 6px;
+			}
 		}
 
-		p {
-			font-size: 14px;
-			font-family: "Arial";
-			color: $textcolor1;
-			line-height: 1.571;
-
-			padding: 6px;
+		.breadcrumbs.first {
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
 		}
-	}
-
-	.breadcrumbs.first {
-		border-bottom-left-radius: 0;
-		border-top-left-radius: 0;
-	}
+	}	
 }
 
 p, li {
@@ -444,7 +452,7 @@ nav {
 	}
 
 	.favicon {
-		position: absolute;
+		position: fixed;
 		bottom: 20px;
 		left: 15px;
 		width: $icon-width;
@@ -517,7 +525,7 @@ nav {
 			}
 
 			&:hover {
-				background-color: #ededed;
+				background-color: $productcolor;
 
 				img {
 					object-position: -60px -50px;
@@ -675,6 +683,17 @@ nav {
 	}
 }
 
+.content404 {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 content {
 	width: 100%;
 
@@ -767,7 +786,16 @@ content {
 					justify-content: center;
 					align-items: center;
 
-					&:after {
+					a {
+						text-decoration: none;
+					}
+
+					&:hover {
+						background-color: $productcolor;
+
+						h3 {
+							color: $seccolor;
+						}
 					}
 
 					.image-container {
@@ -1023,6 +1051,8 @@ content {
 						width: 100%;
 						height: 420px;
 						display: flex;
+
+						margin-bottom: 60px;
 
 						.product-view-container-left {
 							width: 480px;
