@@ -15,12 +15,6 @@
 				</div>
 
 			</div>
-
-			<div class="dot-container">
-				<span class="dot"></span> 
-				<span class="dot"></span> 
-				<span class="dot"></span> 
-			</div>
 		</header>
 
 		<section>

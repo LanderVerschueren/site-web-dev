@@ -332,6 +332,12 @@ p, li {
   flex-direction: column;
 }
 
+@media screen and (max-width: 530px) {
+  .product-filter .product-filter-filters {
+    padding: 0;
+  }
+}
+
 .product-filter .product-filter-filters .form-group {
   display: -webkit-box;
   display: flex;
@@ -353,6 +359,7 @@ p, li {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .product-filter .product-filter-filters .form-group .input-group label {
@@ -373,6 +380,7 @@ p, li {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .product-filter .product-filter-filters .form-group .slider-group input[type='text'], .product-filter .product-filter-filters content .inner_container section .about .kowloon-contact form .form-group .slider-group textarea[type='text'], content .inner_container section .about .kowloon-contact form .product-filter .product-filter-filters .form-group .slider-group textarea[type='text'] {
@@ -395,6 +403,13 @@ p, li {
 section {
   width: 100%;
   max-width: 960px;
+}
+
+@media screen and (max-width: 530px) {
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 nav {
@@ -674,7 +689,6 @@ content .inner_container {
 }
 
 content .inner_container header {
-  height: 480px;
   position: relative;
 }
 
@@ -685,7 +699,6 @@ content .inner_container header .slideshow-container {
 
 content .inner_container header .mySlides img {
   width: 100%;
-  height: 480px;
 }
 
 content .inner_container header .dot-container {
@@ -745,6 +758,7 @@ content .inner_container section .introtext p {
 content .inner_container section .categories {
   display: -webkit-box;
   display: flex;
+  flex-flow: row wrap;
   margin-top: 35px;
 }
 
@@ -752,7 +766,7 @@ content .inner_container section .categories .categories-container {
   display: -webkit-box;
   display: flex;
   -webkit-box-flex: 1;
-  flex: 1;
+  flex: 1 0 150px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
@@ -802,13 +816,25 @@ content .inner_container section .hot-items {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 content .inner_container section .hot-items .product-container {
   display: -webkit-box;
   display: flex;
+  flex-flow: row wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 530px) {
+  content .inner_container section .hot-items .product-container {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 
 content .inner_container section .hot-items .visit-store-link {
@@ -823,6 +849,7 @@ content .inner_container section .hot-items .visit-store-link {
 content .inner_container section .newsletter {
   display: -webkit-box;
   display: flex;
+  flex-flow: row wrap;
   height: 185px;
   margin-top: 35px;
   margin-bottom: 100px;
@@ -830,8 +857,8 @@ content .inner_container section .newsletter {
 
 content .inner_container section .newsletter .background-left {
   background-image: url("/images/Patroon_A.jpg");
-  -webkit-box-flex: 1;
-  flex: 1 0 613px;
+  -webkit-box-flex: 2;
+  flex: 2;
   padding-top: 40px;
 }
 
@@ -860,7 +887,7 @@ content .inner_container section .newsletter form {
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-flex: 1;
-  flex: 1 0 347px;
+  flex: 1;
   background-color: #565656;
   padding-left: 40px;
   padding-top: 40px;
@@ -909,6 +936,7 @@ content .inner_container section .newsletter form .form-group button {
 content .inner_container section .about .kowloon-info {
   display: -webkit-box;
   display: flex;
+  flex-flow: row wrap;
 }
 
 content .inner_container section .about .kowloon-info .history-container {
@@ -1031,11 +1059,19 @@ content .inner_container section .product-view .product-view-list .product-view-
   flex-flow: row wrap;
 }
 
+@media screen and (max-width: 530px) {
+  content .inner_container section .product-view .product-view-list .product-view-container .product-view-container-left {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}
+
 content .inner_container section .product-view .product-view-list .product-view-container .product-view-container-left .product, content .inner_container section .product-view .product-view-list .product-view-container .product-view-container-left .product-stack {
   -webkit-box-flex: 1;
   flex: 1 0 217px;
   margin-right: 3px;
   margin-bottom: 20px;
+  max-width: 217px;
 }
 
 content .inner_container section .product-view .product-view-list .product-view-container .product-view-container-right {
@@ -1049,6 +1085,12 @@ content .inner_container section .product-view .product-view-list .product-view-
   -webkit-box-pack: justify;
   justify-content: space-between;
   background-color: #565656;
+}
+
+@media screen and (max-width: 530px) {
+  content .inner_container section .product-view .product-view-list .product-view-container .product-view-container-right {
+    display: none;
+  }
 }
 
 content .inner_container section .product-view .product-view-list .product-view-container .product-view-container-right img {
@@ -1078,6 +1120,14 @@ content .inner_container section .product-detail .product-detail-general {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 530px) {
+  content .inner_container section .product-detail .product-detail-general {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
 content .inner_container section .product-detail .product-detail-general .image-showcase {
   -webkit-box-flex: 1;
   flex: 1;
@@ -1090,6 +1140,13 @@ content .inner_container section .product-detail .product-detail-general .genera
   flex: 1;
   margin-left: 3px;
   padding-left: 20px;
+}
+
+@media screen and (max-width: 530px) {
+  content .inner_container section .product-detail .product-detail-general .general-info {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 content .inner_container section .product-detail .product-detail-general .general-info .breadcrumbs-container {
@@ -1118,6 +1175,12 @@ content .inner_container section .product-detail .product-detail-spec {
   border-bottom: 1px solid #565656;
   padding-top: 5px;
   padding-bottom: 15px;
+}
+
+@media screen and (max-width: 530px) {
+  content .inner_container section .product-detail .product-detail-spec {
+    padding-left: 0;
+  }
 }
 
 content .inner_container section .product-detail .product-detail-spec h4 {
