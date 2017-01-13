@@ -13,7 +13,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        /*view()->composer('*', function ($view) {
+
+            $current_route_name = \Request::route()->uri();
+
+            dd(\Request::route()->uri());
+
+            $view->with('current_route_name', $current_route_name);
+        });*/
     }
 
     /**

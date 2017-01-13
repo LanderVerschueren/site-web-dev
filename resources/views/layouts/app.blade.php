@@ -28,33 +28,33 @@
                         <img src="/images/sprite.png" alt="">   
                     </a>
             	</li>
-            	<li class="question" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
+            	<li class="question">
                     <a href="#">
                         <img src="/images/sprite.png" alt=""> Search
                     </a>
             	</li>
-            	<li class="magnifier" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
+            	<li class="magnifier">
                     <a href="">
                         <img src="/images/sprite.png" alt=""> FAQ
                     </a>
             	</li>
-            	<li class="enveloppe" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
+            	<li class="enveloppe">
                     <a href="/about">
                         <img src="/images/sprite.png" alt=""> Contact
                     </a>
             	</li>
             	<hr class="divider-bottom">
-            	<li class="dog" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
+            	<li class="dog">
                     <a href="/productview">
                         <img src="/images/sprite.png" alt=""> Dogs
                     </a>
             	</li>
-            	<li class="cat" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
+            	<li class="cat">
                     <a href="/productview">
                         <img src="/images/sprite.png" alt=""> Cats
                     </a>
             	</li>
-            	<li class="fish" {{{ (Request::is('dashboard') ? 'class=active' : '') }}}>
+            	<li class="fish">
                     <a href="/productview">
                         <img src="/images/sprite.png" alt=""> Fish
                     </a>
