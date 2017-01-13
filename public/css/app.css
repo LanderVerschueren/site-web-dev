@@ -1114,6 +1114,7 @@ content .inner_container section .product-detail .product-detail-spec .spec-grou
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
+  display: none;
 }
 
 .inner-filter .product-filter {

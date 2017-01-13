@@ -149,11 +149,12 @@
 					<h5>discover amazing<br>Kowloon deals!</h5>
 					<p>only in our newsletter</p>
 				</div>
-				<form action="#" method="POST">
+				<form action="/emailPost" method="POST">
+					{{ csrf_field() }}
 					<p class="newsletter-subscribe">Subscribe to our newsletter</p>
 					<p class="newsletter-lorum">Lorum ipsum dolor sit amet..</p>
 					<div class="form-group">
-						<input type="text" placeholder="Domain @ name.com">
+						<input name="email" type="email" required placeholder="Domain @ name.com">
 						<button type="submit">OK</button>
 					</div>
 				</form>

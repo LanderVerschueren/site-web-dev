@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -20,5 +21,14 @@ class HomeController extends Controller
 
     public function productDetail(Request $request) {
     	return view('pages.productview-detail');
+    }
+
+    public function emailPost(Request $request) {
+    	$email = $request->input('email');
+    	DB::table('email')->insert(
+		    ['email' => $email]
+		);
+
+		return back();
     }
 }
